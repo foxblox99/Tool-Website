@@ -12,7 +12,7 @@ body {
 }
 
 .calculator {
-  background: linear-gradient(to bottom right, #000c68, #0047a3);
+  background: linear-gradient(to bottom right, #636575, #6e7c8f);
   border-radius: 13px;
   padding: 6px;
   height: 50%;
@@ -43,7 +43,7 @@ body {
 }
 
 .home {
-  background: linear-gradient(to bottom right, #013110, #01523e);
+  background: linear-gradient(to bottom right, #525e74, #566268);
   border-radius: 13px;
   padding: 6px;
   height: 50%;
@@ -102,23 +102,36 @@ body {
   block-size: 90px;
   margin: 0.5rem;
   border-radius: 160px;
+  transition: transform, 0.1s;
+}
+
+.calculator__key:hover {
+  transform: scale(1.1);
 }
 
 .calculator__key:active {
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3) inset;
   outline: none;
+  background: hsl(205, 13%, 46%);
 }
 .calculator__key--operator {
   background: hsl(205, 21%, 59%);
   color: hsl(0, 0%, 100%);
 }
-.calculator__key--operator:active {
-  background: hsl(208, 24%, 80%);
-}
+
 .calculator__key--enter {
   color: hsl(0, 0%, 100%);
   grid-column: 4/5;
   grid-row: 2 / span 4;
   height: auto;
   background: hsl(357, 100%, 72%);
+}
+.calculator__key--enter:hover {
+  transform: scale(1.03);
+}
+.calculator__key--enter:active {
+  background: hsl(357, 100%, 82%);
+}
+
+.is-depressed {
+  background-color: #738594;
 }
