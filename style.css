@@ -20,7 +20,25 @@ body {
   transition: transform 0.15s ease-in-out;
 }
 
-.calculator:hover {
+.cookieclickerNav {
+  background: linear-gradient(to bottom right, #636575, #6e7c8f);
+  border-radius: 13px;
+  padding: 6px;
+  height: 50%;
+  box-shadow: 3px 3px 15px 0px #000000a9;
+  transition: transform 0.15s ease-in-out;
+  width: 63.5px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.cookie__icon {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.calculator:hover,
+.cookieclickerNav:hover {
   transform: scale(1.1);
 }
 
@@ -35,6 +53,7 @@ body {
 
 .homebutton_icon {
   height: 100%;
+  width: 100%;
   color: rgb(255, 255, 255);
 }
 
@@ -43,7 +62,7 @@ body {
 }
 
 .home {
-  background: linear-gradient(to bottom right, #525e74, #566268);
+  background: linear-gradient(to bottom right, #636575, #6e7c8f);
   border-radius: 13px;
   padding: 6px;
   height: 50%;
